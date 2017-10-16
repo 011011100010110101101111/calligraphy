@@ -1,0 +1,18 @@
+server:
+  port: 8088
+spring: 
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/hq_wenxue
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  thymeleaf:
+    encoding: UTF-8
+    cache: false
+    mode: HTML5
+#    prefix: classpath:/templates/
+    suffix: .html
