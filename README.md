@@ -2,7 +2,7 @@
 
 This project was developed for the HuPan literature during the University
 
-此项目为大学期间的湖畔文学社而开发.
+此项目为大学期间的文学社而开发.
 
 ## 构思（conception）
 - first of all, from when I was in college, had wanted to give us the idea of literature to build a website, but suffer from a student's helpless pain, many ideas have been put on hold, but for this matter, "if you have a dream, you must go to defend his" ——from "the pursuit of happyness"
@@ -16,7 +16,7 @@ This project was developed for the HuPan literature during the University
 - 这两天在着手设计的问题，由于是第一次一个人单独做一个完整的项目，有些问题还欠缺考虑，得要先进行完整的设计，届时我会把涉及文档一并上传
 
 ## 为什么我要放到github?(Why should I have my code hosted on github)
-- Besides the says, the reason why I put the code on the lot, because that is his ability is not enough to a person a project independently, so I need more people to help, whether it is a design, optimization, and the realization of the code, I sincerely invite you to guide the younger brother, any good suggestion or what's in my design defect, please you know everything, can, I would appreciate.
+- Besides the says, the reason why I put the code on the lot, because that is my ability is not enough to a person a project independently, so I need more people to help, whether it is a design, optimization, and the realization of the code, I sincerely invite you to guide the younger brother, any good suggestion or what's in my design defect, please you know everything, can, I would appreciate.
 - 除了上文说到的以外，我之所以将代码放在github上，是因为深知目前的自己能力还不足以一个人独立完成一个项目，所以我需要更多人的帮忙，无论是设计上、优化上，还是代码的实现上，我真心的邀请各位能指导一下小弟，有什么好的建议或者我的设计有什么缺陷，恳请各位知无不言、言无不尽，我将不甚感激。
 ### 你可以通过一下方法联系我(You can contact me in a way):
 - QQ:251623469
