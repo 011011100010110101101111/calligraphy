@@ -6,7 +6,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 /**
- * security配置类 
+ * this class is a security  Configuration; security 配置类 
  * @author allen
  * @website   sousou.io
  * @date 2017年10月14日
