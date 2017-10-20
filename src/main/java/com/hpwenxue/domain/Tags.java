@@ -2,12 +2,20 @@ package com.hpwenxue.domain;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * 标签
  * @author allen
  *
  */
+
+@Entity
 public class Tags {
+	@Id
+	@GeneratedValue
 	private Integer id;
 	private String name;
 	private Date createTime;

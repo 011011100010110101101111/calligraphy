@@ -2,7 +2,14 @@ package com.hpwenxue.domain;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Roles {
+	@Id
+	@GeneratedValue
 	private Integer id;
 	private String name;
 	private Date createTime;
