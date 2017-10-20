@@ -15,6 +15,10 @@ This project was developed for the HuPan literature during the University
 - This two days in to design problem, because it is the first time a person alone to do a complete project, some problems also lack of consideration, must first complete design, then I will upload the document
 - 这两天在着手设计的问题，由于是第一次一个人单独做一个完整的项目，有些问题还欠缺考虑，得要先进行完整的设计，届时我会把涉及文档一并上传
 
+诚挚的邀请各位能够参与到本项目中并为我提供宝贵的建议！可以直接去编辑我的设计文档。
+
+[文档地址](https://github.com/gitors/hp-literature/wiki "文档地址")
+
 ## 为什么我要放到github?(Why should I have my code hosted on github)
 - Besides the says, the reason why I put the code on the lot, because that is my ability is not enough to a person a project independently, so I need more people to help, whether it is a design, optimization, and the realization of the code, I sincerely invite you to guide the younger brother, any good suggestion or what's in my design defect, please you know everything, can, I would appreciate.
 - 除了上文说到的以外，我之所以将代码放在github上，是因为深知目前的自己能力还不足以一个人独立完成一个项目，所以我需要更多人的帮忙，无论是设计上、优化上，还是代码的实现上，我真心的邀请各位能指导一下小弟，有什么好的建议或者我的设计有什么缺陷，恳请各位知无不言、言无不尽，我将不甚感激。
