@@ -1,9 +1,9 @@
 package com.hpwenxue.aspect;
 /**
- * 统一日志处理
+ * api请求统一日志处理
  * @author Administrator
  * 11
  */
-public class LogAspect {
+public class HttpLogAspect {
 
 }
