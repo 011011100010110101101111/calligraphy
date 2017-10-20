@@ -21,6 +21,7 @@ This project was developed for the HuPan literature during the University
 ### 你可以通过一下方法联系我(You can contact me in a way):
 - QQ:251623469
 - Email:1@gitor.org
+- Blog:gitor.org
 ## 结束语（remarks）
 
 > Due to my limited English level, most of the English versions are translated by means of tools. If there is any inaccuracy, please understand
