@@ -4,6 +4,6 @@ package com.hpwenxue.aspect;
  * @author Administrator
  *
  */
-public class ExceptionAspect {
-
+public class ExceptionAspect  {
+	
 }
