@@ -4,6 +4,8 @@ This project was developed for the HuPan literature during the University
 
 此项目为大学期间的文学社而开发.
 
+- 目前项目正在设计初期，如果需要了解，请移步 [wiki](https://github.com/gitors/hp-literature/wiki "文档地址")
+
 ## 构思（conception）
 - first of all, from when I was in college, had wanted to give us the idea of literature to build a website, but suffer from a student's helpless pain, many ideas have been put on hold, but for this matter, "if you have a dream, you must go to defend his" ——from "the pursuit of happyness"
 - 首先，从我上大学的时候，就有过想给我们文学社建一个自己的网站的想法，但是苦于学生时代的苦逼，很多的想法都被搁置了，但是一直为此事耿耿于怀，"如果你有一个梦想，你必须去捍卫他"——来自《当幸福来敲门》
