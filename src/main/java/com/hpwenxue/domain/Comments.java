@@ -7,13 +7,13 @@ import javax.persistence.Id;
 import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
-public class Student {
+public class Comments {
 	@Id
 	@GeneratedValue
 	private Integer id;
 	@NotBlank(message = "学生姓名不能为空")
 	private String name;
-	public Student(){
+	public Comments(){
 		
 	}
 	public Integer getId() {
