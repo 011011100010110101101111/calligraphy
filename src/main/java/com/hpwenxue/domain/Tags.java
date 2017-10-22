@@ -25,7 +25,9 @@ public class Tags {
 	public String toString() {
 		return "Tags [id=" + id + ", name=" + name + ", createTime=" + createTime + ", updateTime=" + updateTime + "]";
 	}
-
+	public Tags(){
+		
+	}
 	public Integer getId() {
 		return id;
 	}

@@ -1,8 +1,12 @@
 package com.hpwenxue.domain;
 
-import com.hpwenxue.domain.dto.UserDto;
-
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+@Entity
 public class User {
+	@Id
+	@GeneratedValue
 	private Integer id;
 	private String userName;
 	private String realName;
@@ -12,21 +16,7 @@ public class User {
 	public User(){
 		
 	}
-	/**
-	 * get dto
-	 * 通过实体获取到对应的DTO
-	 * @return
-	 */
-	public UserDto getDto(){
-		UserDto dto = new UserDto();
-		dto.setId(this.id);
-		dto.setAge(this.age);
-		dto.setRealName(this.realName);
-		dto.setSex(this.sex);
-		dto.setUserName(this.userName);
-		return dto;
-	}
-	
+
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", userName=" + userName + ", realName="

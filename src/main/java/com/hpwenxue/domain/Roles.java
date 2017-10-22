@@ -21,6 +21,9 @@ public class Roles {
 	public String toString() {
 		return "Roles [id=" + id + ", name=" + name + ", createTime=" + createTime + ", updateTime=" + updateTime + "]";
 	}
+	public Roles(){
+		
+	}
 
 	public Integer getId() {
 		return id;
