@@ -1,17 +1,12 @@
-package com.hpwenxue.boot;
+package com.hpwenxue;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-/**
- * 项目启动类，
- * @author gitor
- * @Blog http://gitor.org
- *
- */
+
 @SpringBootApplication
-public class Boot {
+public class Booter {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Boot.class, args);
+		SpringApplication.run(Booter.class, args);
 	}
 }

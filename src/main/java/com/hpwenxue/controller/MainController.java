@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 @RequestMapping("/index")
 public class MainController {
-	@GetMapping
+	@GetMapping(value="/a")
 	public String index(){
 		
 		return  "index";

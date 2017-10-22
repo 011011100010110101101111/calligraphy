@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8088
 spring: 
   datasource: 
     driver-class-name: com.mysql.jdbc.Driver
@@ -7,12 +7,18 @@ spring:
     username: root
     password: root
   jpa:
-    hibernate:
-      ddl-auto: update
     show-sql: true
+    hibernate:
+      ddl-auto: create
   thymeleaf:
     encoding: UTF-8
     cache: false
-    mode: HTML5
+#    mode: HTML5
 #    prefix: classpath:/templates/
-    suffix: .html
+#    suffix: .html
+       
+
+
+
+# 首次启动项目可以将ddl-auto 改为 create ,将会自动创建表结构
+# 数据库需要手动创建好
