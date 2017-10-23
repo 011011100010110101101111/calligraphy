@@ -5,6 +5,11 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+/**
+ * 文章entity
+ * @author allen
+ *
+ */
 @Entity
 public class Articles {
 	@Id
