@@ -12,21 +12,55 @@ public class Articles {
 	private Integer id;
 	private String taitle;
 	private Date createTime;
+	private Date updateTime;
+	private String summary;
+	private String content;
+	private Integer pageview;
+	private Integer numOfComments;
+	
 	
 	public Articles(){
 		
 	}
 	
-	
-	
 	@Override
 	public String toString() {
 		return "Articles [id=" + id + ", taitle=" + taitle + ", createTime="
-				+ createTime + "]";
+				+ createTime + ", updateTime=" + updateTime + ", summary="
+				+ summary + ", content=" + content + ", pageview=" + pageview
+				+ ", numOfComments=" + numOfComments + "]";
 	}
 
-
-
+	public Date getUpdateTime() {
+		return updateTime;
+	}
+	public void setUpdateTime(Date updateTime) {
+		this.updateTime = updateTime;
+	}
+	public String getSummary() {
+		return summary;
+	}
+	public void setSummary(String summary) {
+		this.summary = summary;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public Integer getPageview() {
+		return pageview;
+	}
+	public void setPageview(Integer pageview) {
+		this.pageview = pageview;
+	}
+	public Integer getNumOfComments() {
+		return numOfComments;
+	}
+	public void setNumOfComments(Integer numOfComments) {
+		this.numOfComments = numOfComments;
+	}
 	public Integer getId() {
 		return id;
 	}
