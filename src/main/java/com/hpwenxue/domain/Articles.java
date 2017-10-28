@@ -33,67 +33,121 @@ public class Articles {
 	//评论数
 	private Integer numOfComments;
 	
+	//点赞数
+	private Integer endorseNum;
+	//点踩数
+	private Integer opposeNum;
 	
 	public Articles(){
 		
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Articles [id=" + id + ", taitle=" + taitle + ", createTime="
-				+ createTime + ", updateTime=" + updateTime + ", summary="
-				+ summary + ", content=" + content + ", pageview=" + pageview
-				+ ", numOfComments=" + numOfComments + "]";
+		return "Articles [id=" + id + ", taitle=" + taitle + ", createTime=" + createTime + ", updateTime=" + updateTime
+				+ ", summary=" + summary + ", content=" + content + ", pageview=" + pageview + ", numOfComments="
+				+ numOfComments + ", endorseNum=" + endorseNum + ", opposeNum=" + opposeNum + "]";
 	}
+
+	public Integer getId() {
+		return id;
+	}
+	
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
+
+	public String getTaitle() {
+		return taitle;
+	}
+	
+
+	public void setTaitle(String taitle) {
+		this.taitle = taitle;
+	}
+	
+
+	public Date getCreateTime() {
+		return createTime;
+	}
+	
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+	
 
 	public Date getUpdateTime() {
 		return updateTime;
 	}
+	
+
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}
+	
+
 	public String getSummary() {
 		return summary;
 	}
+	
+
 	public void setSummary(String summary) {
 		this.summary = summary;
 	}
+	
+
 	public String getContent() {
 		return content;
 	}
+	
+
 	public void setContent(String content) {
 		this.content = content;
 	}
+	
+
 	public Integer getPageview() {
 		return pageview;
 	}
+	
+
 	public void setPageview(Integer pageview) {
 		this.pageview = pageview;
 	}
+	
+
 	public Integer getNumOfComments() {
 		return numOfComments;
 	}
+	
+
 	public void setNumOfComments(Integer numOfComments) {
 		this.numOfComments = numOfComments;
 	}
-	public Integer getId() {
-		return id;
+	
+
+	public Integer getEndorseNum() {
+		return endorseNum;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	
+
+	public void setEndorseNum(Integer endorseNum) {
+		this.endorseNum = endorseNum;
 	}
-	public String getTaitle() {
-		return taitle;
+	
+
+	public Integer getOpposeNum() {
+		return opposeNum;
 	}
-	public void setTaitle(String taitle) {
-		this.taitle = taitle;
+	
+
+	public void setOpposeNum(Integer opposeNum) {
+		this.opposeNum = opposeNum;
 	}
-	public Date getCreateTime() {
-		return createTime;
-	}
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
-	}
+	
 	
 	
 }
