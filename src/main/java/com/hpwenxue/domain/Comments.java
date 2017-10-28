@@ -5,13 +5,19 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import org.hibernate.validator.constraints.NotBlank;
-
+/**
+ * 评论
+ * @author Administrator
+ *
+ */
 @Entity
 public class Comments {
 	@Id
 	@GeneratedValue
 	private Integer id;
-	@NotBlank(message = "学生姓名不能为空")
+	//文章Id
+	private Integer articleId;
+	
 	private String name;
 	public Comments(){
 		

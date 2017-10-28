@@ -14,13 +14,23 @@ import javax.persistence.Id;
 public class Articles {
 	@Id
 	@GeneratedValue
+	/**
+	 * Id
+	 */
 	private Integer id;
+	//标题
 	private String taitle;
+	//创建时间
 	private Date createTime;
+	//最后更新时间
 	private Date updateTime;
+	//概要
 	private String summary;
+	//内容
 	private String content;
+	//浏览量
 	private Integer pageview;
+	//评论数
 	private Integer numOfComments;
 	
 	
