@@ -12,4 +12,5 @@ import com.hpwenxue.domain.Articles;
 public interface ArticlesService {
 	public List<Articles> getAll();
 	public Articles getOne(Integer id);
+	public List<Articles> gatArticlesByName(String name);
 }

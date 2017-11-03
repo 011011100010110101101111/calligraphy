@@ -27,4 +27,12 @@ public class ArticleServiceImpl implements ArticlesService {
 		return articlesRepository.findOne(id);
 	}
 
+	@Override
+	public List<Articles> gatArticlesByName(String name) {
+		// TODO Auto-generated method stub
+		return articlesRepository.findAll();
+	}
+	
+	
+
 }
