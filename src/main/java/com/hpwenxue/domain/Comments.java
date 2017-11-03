@@ -4,18 +4,24 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-import org.hibernate.validator.constraints.NotBlank;
-
+/**
+ * 评论
+ * @author Administrator
+ *
+ */
 @Entity
 public class Comments {
 	@Id
 	@GeneratedValue
 	private Integer id;
-	@NotBlank(message = "学生姓名不能为空")
-	private String name;
-	public Comments(){
-		
-	}
+	//文章Id
+	private Integer articleId;
+	//评论详情
+	private String detail;
+	//点赞数
+	private Integer endorseNum;
+	//点踩数
+	private Integer opposeNum;
 	public Integer getId() {
 		return id;
 	}
@@ -24,12 +30,36 @@ public class Comments {
 		this.id = id;
 	}
 	
-	public String getName() {
-		return name;
+	public Integer getArticleId() {
+		return articleId;
 	}
 	
-	public void setName(String name) {
-		this.name = name;
+	public void setArticleId(Integer articleId) {
+		this.articleId = articleId;
+	}
+	
+	public String getDetail() {
+		return detail;
+	}
+	
+	public void setDetail(String detail) {
+		this.detail = detail;
+	}
+	
+	public Integer getEndorseNum() {
+		return endorseNum;
+	}
+	
+	public void setEndorseNum(Integer endorseNum) {
+		this.endorseNum = endorseNum;
+	}
+	
+	public Integer getOpposeNum() {
+		return opposeNum;
+	}
+	
+	public void setOpposeNum(Integer opposeNum) {
+		this.opposeNum = opposeNum;
 	}
 	
 	
