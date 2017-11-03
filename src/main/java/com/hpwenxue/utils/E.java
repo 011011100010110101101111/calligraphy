@@ -5,6 +5,7 @@ package com.hpwenxue.utils;
  *
  */
 public class E extends Exception{
+	private static final long serialVersionUID = 1L;
 	private Integer code;
 	private String message;
 	
