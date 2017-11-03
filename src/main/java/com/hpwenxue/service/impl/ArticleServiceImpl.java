@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.hpwenxue.dao.ArticlesRepository;
 import com.hpwenxue.domain.Articles;
@@ -29,10 +30,19 @@ public class ArticleServiceImpl implements ArticlesService {
 
 	@Override
 	public List<Articles> gatArticlesByName(String name) {
-		// TODO Auto-generated method stub
 		return articlesRepository.findAll();
 	}
-	
-	
 
+	@Override
+	public void deleteById(Integer id) {
+		articlesRepository.delete(id);
+	}
+
+	@Override
+	@Transactional
+	public void deleteByIds(List<Integer> ids) {
+		for(Integer id:ids){
+			articlesRepository.delete(id);
+		}
+	}
 }
