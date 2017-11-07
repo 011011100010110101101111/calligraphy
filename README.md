@@ -1,4 +1,6 @@
-# hp-literature
+# calligraphy(2017-11-07 更名，原名称hp-literature )
+
+- 名称解释：calligraphy：翰墨 取母校“翰墨池” 之翰墨
 
 This project was developed for the HuPan literature during the University
 

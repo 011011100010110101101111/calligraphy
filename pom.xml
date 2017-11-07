@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.hpwenxue</groupId>
-	<artifactId>hp-literature</artifactId>
+	<artifactId>calligraphy</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>hp-literature</name>
-	<description>hp-literature/cms/blog/website</description>
+	<name>calligraphy</name>
+	<description>calligraphy/cms/blog/website</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
