@@ -38,16 +38,23 @@ public class Articles {
 	//点踩数
 	private Integer opposeNum;
 	
+	private Integer typeId;
+	
 	public Articles(){
 		
 	}
+
+
 
 	@Override
 	public String toString() {
 		return "Articles [id=" + id + ", taitle=" + taitle + ", createTime=" + createTime + ", updateTime=" + updateTime
 				+ ", summary=" + summary + ", content=" + content + ", pageview=" + pageview + ", numOfComments="
-				+ numOfComments + ", endorseNum=" + endorseNum + ", opposeNum=" + opposeNum + "]";
+				+ numOfComments + ", endorseNum=" + endorseNum + ", opposeNum=" + opposeNum + ", typeId=" + typeId
+				+ "]";
 	}
+
+
 
 	public Integer getId() {
 		return id;
@@ -147,6 +154,17 @@ public class Articles {
 	public void setOpposeNum(Integer opposeNum) {
 		this.opposeNum = opposeNum;
 	}
+	public Integer getTypeId() {
+		return typeId;
+	}
+	
+
+
+
+	public void setTypeId(Integer typeId) {
+		this.typeId = typeId;
+	}
+	
 	
 	
 	
