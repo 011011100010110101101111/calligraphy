@@ -5,11 +5,11 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/hp_wenxue
     username: root
-    password: root
+    password: lwl123
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
   thymeleaf:
     encoding: UTF-8
     cache: false
