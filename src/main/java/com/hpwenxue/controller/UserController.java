@@ -25,7 +25,6 @@ public class UserController {
 	 */
 	@GetMapping(value="/list")
 	public R listUser(){
-		System.out.println(userService.getAll());
-		return R.ok();
+		return R.ok().put("data", userService.getAll());
 	}
 }
