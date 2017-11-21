@@ -2,13 +2,17 @@ package com.hpwenxue.service.impl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.hpwenxue.dao.UserRepository;
 import com.hpwenxue.domain.User;
 import com.hpwenxue.service.UserService;
 @Service
 public class UserServiceImpl implements UserService {
-
+	@Autowired
+	private UserRepository userRepository;
+	
 	@Override
 	public void upgrade(User user) {
 		// TODO Auto-generated method stub
@@ -47,8 +51,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public List<User> getAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return userRepository.findAll();
 	}
 
 	@Override

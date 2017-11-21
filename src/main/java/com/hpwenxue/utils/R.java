@@ -13,7 +13,15 @@ public class R extends HashMap<String,Object> {
 		super();
 	}
 	public static R ok(){
-		return new R();
+		R r = new R();
+		r.put("code", 0);
+		r.put("msg", "操作成功");
+		return r;
+	}
+	public  R put(String key,Object value) {
+		R r = new R();
+		r.put(key, value);
+		return r;
 	}
 	
 }
