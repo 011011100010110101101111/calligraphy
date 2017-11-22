@@ -1,7 +1,10 @@
 package com.hpwenxue.controller;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,5 +29,14 @@ public class UserController {
 	@GetMapping(value="/list")
 	public R listUser(){
 		return R.ok().put("data", userService.getAll());
+	}
+	/**
+	 * 注册
+	 * @param params
+	 * @return
+	 */
+	@PostMapping(value="/register")
+	public R register(Map<String,Object> params) {
+		return R.ok();
 	}
 }
