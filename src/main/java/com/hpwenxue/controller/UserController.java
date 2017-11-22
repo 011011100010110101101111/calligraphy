@@ -5,7 +5,9 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hpwenxue.service.UserService;
@@ -36,7 +38,25 @@ public class UserController {
 	 * @return
 	 */
 	@PostMapping(value="/register")
-	public R register(Map<String,Object> params) {
+	public R register(@RequestBody Map<String,Object> params) {
+		return R.ok();
+	}
+	/**
+	 * 查询一个用户的信息
+	 * @param id
+	 * @return
+	 */
+	@GetMapping(value="/view")
+	public R view(@RequestParam Integer id) {
+		return R.ok();
+	}
+	/**
+	 * 修改用户密码
+	 * @param params
+	 * @return
+	 */
+	@PostMapping(value="/change-pass-word")
+	public R changePassWord(@RequestBody Map<String,Object> params) {
 		return R.ok();
 	}
 }
