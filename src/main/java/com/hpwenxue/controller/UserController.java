@@ -2,6 +2,7 @@ package com.hpwenxue.controller;
 
 import java.util.Map;
 
+import org.apache.commons.collections.MapUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hpwenxue.domain.User;
 import com.hpwenxue.service.UserService;
 import com.hpwenxue.utils.R;
 /**
@@ -39,6 +41,9 @@ public class UserController {
 	 */
 	@PostMapping(value="/register")
 	public R register(@RequestBody Map<String,Object> params) {
+		String userName = MapUtils.getString(params, "userName");
+		User user = new User();
+		user.setUserName(userName);
 		return R.ok();
 	}
 	/**

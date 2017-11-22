@@ -12,16 +12,20 @@ public class User {
 	private String realName;
 	private Integer age;
 	private Integer sex;
+	private String passWord;
 	
 	public User(){
 		
 	}
 
+
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", userName=" + userName + ", realName="
-				+ realName + ", age=" + age + ", sex=" + sex + "]";
+		return "User [id=" + id + ", userName=" + userName + ", realName=" + realName + ", age=" + age + ", sex=" + sex
+				+ ", passWord=" + "can not view passWord!" + "]";
 	}
+
+
 	public Integer getId() {
 		return id;
 	}
@@ -51,6 +55,12 @@ public class User {
 	}
 	public void setSex(Integer sex) {
 		this.sex = sex;
+	}
+	public String getPassWord() {
+		return passWord;
+	}
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
 	}
 	
 }
