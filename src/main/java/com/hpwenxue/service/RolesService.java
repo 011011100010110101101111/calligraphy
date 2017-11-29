@@ -5,12 +5,12 @@ import java.util.List;
 import com.hpwenxue.domain.Roles;
 
 public interface RolesService {
-	public Roles getOne(Integer id);
-	public List<Roles> getAll();
-	public void save(Roles roles);
+	Roles getOne(Integer id);
+	List<Roles> getAll();
+	void save(Roles roles);
 	
-	public void delete(Integer id);
+	void delete(Integer id);
 	
-	public void deleteBatch(List<Integer> ids);
+	void deleteBatch(List<Integer> ids);
 	
 }

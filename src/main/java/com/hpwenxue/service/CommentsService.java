@@ -16,25 +16,25 @@ public interface CommentsService {
 	 * @param id
 	 * @return
 	 */
-	public Comments getOne(Integer id);
+	Comments getOne(Integer id);
 	/**
 	 * 查询所有记录
 	 * @return
 	 */
-	public List<Comments> getAll();
+	List<Comments> getAll();
 	/**
 	 * 保存
 	 * @param comments
 	 */
-	public void save(Comments comments);
+	void save(Comments comments);
 	/**
 	 * 删除
 	 * @param id
 	 */
-	public void delete(Integer id);
+	void delete(Integer id);
 	/**
 	 * 批量删除
 	 * @param ids
 	 */
-	public void deleteBatch(List<Integer> ids);
+	void deleteBatch(List<Integer> ids);
 }

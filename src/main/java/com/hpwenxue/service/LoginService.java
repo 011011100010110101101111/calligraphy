@@ -8,5 +8,5 @@ public interface LoginService {
 	 * @param parmas
 	 * @return
 	 */
-	public Map<String,Object> login(Map<String,Object> parmas);
+	Map<String,Object> login(Map<String,Object> parmas);
 }

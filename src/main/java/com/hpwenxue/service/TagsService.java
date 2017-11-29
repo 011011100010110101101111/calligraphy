@@ -8,5 +8,5 @@ import com.hpwenxue.domain.Tags;
 
 @Service
 public interface TagsService {
-	public List<Tags> getAll();
+	List<Tags> getAll();
 }
