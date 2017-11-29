@@ -42,9 +42,7 @@ public class CommentsServiceImpl implements CommentsService {
 
 	@Override
 	public void deleteBatch(List<Integer> ids) {
-		for (Integer i :ids){
-			commentsRepository.delete(i);
-		}
+		ids.forEach(commentsRepository::delete);
 	}
 
 }

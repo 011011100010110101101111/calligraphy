@@ -41,8 +41,6 @@ public class ArticleServiceImpl implements ArticlesService {
 	@Override
 	@Transactional
 	public void deleteByIds(List<Integer> ids) {
-		for(Integer id:ids){
-			articlesRepository.delete(id);
-		}
+		ids.forEach(n->articlesRepository.delete(n));
 	}
 }
