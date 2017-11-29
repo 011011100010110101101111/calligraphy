@@ -53,7 +53,7 @@ public class UserController {
 	 */
 	@GetMapping(value="/view")
 	public R view(@RequestParam Integer id) {
-		return R.ok();
+		return R.ok().put("data",userService.getOne(id));
 	}
 	/**
 	 * 修改用户密码

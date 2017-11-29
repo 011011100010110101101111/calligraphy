@@ -2,47 +2,49 @@ package com.hpwenxue.service.impl;
 
 import java.util.List;
 
+import com.hpwenxue.dao.CommentsRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hpwenxue.domain.Comments;
 import com.hpwenxue.service.CommentsService;
 /**
- * 
- * @author allen
- * @website gitor.org
+ * 评论service实现类
+ * @author liuwenlong
  * @date 2017年11月3日下午11:47:37
  */
 @Service("commentsServiceImpl")
 public class CommentsServiceImpl implements CommentsService {
 
+	@Autowired
+	private CommentsRepository commentsRepository;
+
 	@Override
 	public Comments getOne(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+
+		return commentsRepository.getOne(id);
 	}
 
 	@Override
 	public List<Comments> getAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return commentsRepository.findAll();
 	}
 
 	@Override
 	public void save(Comments comments) {
-		// TODO Auto-generated method stub
-		
+		commentsRepository.save(comments);
 	}
 
 	@Override
 	public void delete(Integer id) {
-		// TODO Auto-generated method stub
-		
+		commentsRepository.delete(id);
 	}
 
 	@Override
 	public void deleteBatch(List<Integer> ids) {
-		// TODO Auto-generated method stub
-		
+		for (Integer i :ids){
+			commentsRepository.delete(i);
+		}
 	}
 
 }

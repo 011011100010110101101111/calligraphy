@@ -31,4 +31,16 @@ public class LoginController {
 	public R lonout(@RequestBody Map<String,Object> params) {
 		return R.ok();
 	}
+
+	/**
+	 * 找回密码
+	 * @param params 验证信息
+	 * @return
+	 */
+	@PostMapping(value = "/findPassWord")
+	public R forgetPassWord(@RequestBody Map<String,Object> params){
+		//TODO 进行验证，然后修改密码
+
+		return R.ok();
+	}
 }

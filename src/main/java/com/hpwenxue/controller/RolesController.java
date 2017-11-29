@@ -1,0 +1,1 @@
+package com.hpwenxue.controller;import org.springframework.web.bind.annotation.RequestMapping;import org.springframework.web.bind.annotation.RestController;/** * 角色管理 * @author : liuwenlong * @date : 2017/11/29 11:15 */@RestController@RequestMapping("/roles")public class RolesController {}

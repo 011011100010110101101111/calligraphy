@@ -21,11 +21,11 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public void update(User user) {
-		
 	}
 
 	@Override
-	public void save(User user) {
+	public void save(User user)
+	{
 		userRepository.save(user);
 	}
 
@@ -53,8 +53,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User getOne(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		return userRepository.getOne(id);
 	}
 
 }

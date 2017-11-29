@@ -2,39 +2,41 @@ package com.hpwenxue.service.impl;
 
 import java.util.List;
 
+import com.hpwenxue.dao.RolesRepository;
 import com.hpwenxue.domain.Roles;
 import com.hpwenxue.service.RolesService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class RolesServiceImpl implements RolesService {
 
+	@Autowired
+	private RolesRepository rolesRepository;
+
 	@Override
 	public Roles getOne(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		return rolesRepository.getOne(id);
 	}
 
 	@Override
 	public List<Roles> getAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return rolesRepository.findAll();
 	}
 
 	@Override
 	public void save(Roles roles) {
-		// TODO Auto-generated method stub
-
+		rolesRepository.save(roles);
 	}
 
 	@Override
 	public void delete(Integer id) {
-		// TODO Auto-generated method stub
-
+		rolesRepository.delete(id);
 	}
 
 	@Override
 	public void deleteBatch(List<Integer> ids) {
-		// TODO Auto-generated method stub
-
+		for (Integer i : ids){
+			rolesRepository.delete(i);
+		}
 	}
 
 }

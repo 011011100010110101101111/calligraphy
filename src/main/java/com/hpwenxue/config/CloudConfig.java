@@ -1,0 +1,1 @@
+package com.hpwenxue.config;/** * 云存储配置文件 * @author : liuwenlong * @date : 2017/11/29 11:11 */public class CloudConfig {    //七牛    //mongodb}
