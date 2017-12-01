@@ -21,6 +21,12 @@ public interface ArticlesService {
 	 * @return
 	 */
 	Articles getOne(Integer id);
+
+    /**
+     * 根据文章内容进行查询
+     * @param name
+     * @return
+     */
 	List<Articles> gatArticlesByName(String name);
 	/**
 	 * 根据ID删除一个

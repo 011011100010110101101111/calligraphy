@@ -34,9 +34,7 @@ public class RolesServiceImpl implements RolesService {
 
 	@Override
 	public void deleteBatch(List<Integer> ids) {
-		for (Integer i : ids){
-			rolesRepository.delete(i);
-		}
+		ids.forEach(rolesRepository::delete);
 	}
 
 }

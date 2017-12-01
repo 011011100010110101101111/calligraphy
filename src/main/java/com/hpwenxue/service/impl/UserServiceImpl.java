@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import com.hpwenxue.dao.UserRepository;
 import com.hpwenxue.domain.User;
 import com.hpwenxue.service.UserService;
+import org.springframework.transaction.annotation.Transactional;
+
 @Service
 public class UserServiceImpl implements UserService {
 	@Autowired
@@ -35,9 +37,9 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
+	@Transactional
 	public void deleteBatch(List<Integer> ids) {
-		// TODO Auto-generated method stub
-		
+		ids.forEach(userRepository::delete);
 	}
 
 	@Override
