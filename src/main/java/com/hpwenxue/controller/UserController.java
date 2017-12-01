@@ -36,14 +36,13 @@ public class UserController {
 	}
 	/**
 	 * 注册
-	 * @param params
+	 * @param user 注册的用户信息
 	 * @return
 	 */
 	@PostMapping(value="/register")
-	public R register(@RequestBody Map<String,Object> params) {
-		String userName = MapUtils.getString(params, "userName");
-		User user = new User();
-		user.setUserName(userName);
+	public R register(@RequestBody User user) {
+		//TODO 先验证用户名是否存在，不存在再新增
+		userService.save(user);
 		return R.ok();
 	}
 	/**

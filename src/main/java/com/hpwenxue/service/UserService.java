@@ -26,11 +26,6 @@ public interface UserService {
 	 */
 	void upgrade(User user);
 	/**
-	 * 修改用户
-	 * @param user
-	 */
-	void update(User user);
-	/**
 	 * 保存
 	 * @param user
 	 */
