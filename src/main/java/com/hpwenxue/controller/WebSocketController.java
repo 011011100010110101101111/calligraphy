@@ -9,7 +9,7 @@ import com.hpwenxue.utils.R;
 /**
  * websocket controller
  * 
- * @author allen
+ * @author liuwenlong
  *
  */
 @RestController

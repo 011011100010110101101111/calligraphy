@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 /**
  * the main controller
- * @author allen
+ * @author liuwenlong
  * @date 
  */
 @RestController

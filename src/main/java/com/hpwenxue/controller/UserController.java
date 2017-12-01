@@ -17,7 +17,7 @@ import com.hpwenxue.utils.R;
 /**
  * user cntroller 
  * 用户控制器
- * @author allen
+ * @author liuwenlong
  *
  */
 @RestController
