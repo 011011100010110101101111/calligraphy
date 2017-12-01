@@ -43,4 +43,9 @@ public class ArticleServiceImpl implements ArticlesService {
 	public void deleteByIds(List<Integer> ids) {
 		ids.forEach(n->articlesRepository.delete(n));
 	}
+
+	@Override
+	public void save(Articles articles) {
+		articlesRepository.save(articles);
+	}
 }

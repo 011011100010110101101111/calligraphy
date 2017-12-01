@@ -36,4 +36,6 @@ public interface ArticlesService {
 	 * 批量删除
 	 */
 	void deleteByIds(List<Integer> ids);
+
+	void save(Articles articles);
 }
