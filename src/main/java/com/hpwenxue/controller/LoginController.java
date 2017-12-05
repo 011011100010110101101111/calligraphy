@@ -40,7 +40,6 @@ public class LoginController {
 	@PostMapping(value = "/findPassWord")
 	public R forgetPassWord(@RequestBody Map<String,Object> params){
 		//TODO 进行验证，然后修改密码
-
 		return R.ok();
 	}
 }
