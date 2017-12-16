@@ -2,6 +2,7 @@ package com.hpwenxue.service.impl;
 
 import java.util.List;
 
+import com.oracle.webservices.internal.api.databinding.ExternalMetadataFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
