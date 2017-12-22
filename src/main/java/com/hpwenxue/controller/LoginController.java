@@ -2,6 +2,10 @@ package com.hpwenxue.controller;
 
 import java.util.Map;
 
+import com.hpwenxue.service.LoginService;
+import org.apache.commons.collections.MapUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,12 +18,26 @@ import com.hpwenxue.utils.R;
  */
 @RestController
 public class LoginController {
+
+    @Autowired
+    private LoginService loginService;
 	/**
 	 * 登陆
 	 * @return
 	 */
 	@PostMapping(value="/login")
 	public R login(@RequestBody Map<String,Object> parmas) {
+
+	    String userName = MapUtils.getString(parmas,"userName");
+	    String password = MapUtils.getString(parmas,"password");
+	    if (StringUtils.isBlank(userName)){
+	        return R.error(1,"用户名不能为空！");
+        }
+        if (StringUtils.isBlank(password)){
+	        return R.error(1,"密码不能为空！");
+        }
+        loginService.login(userName,password);
+
 		return R.ok();
 	}
 	/**

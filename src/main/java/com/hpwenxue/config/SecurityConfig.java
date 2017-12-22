@@ -15,7 +15,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception{
-		http.authorizeRequests().antMatchers("/login.html","/index.html","/*","/index").permitAll()
+		http.authorizeRequests().antMatchers("/login.html","/index.html","/*","/index","/login").permitAll()
 		.antMatchers("/admin/*").hasRole("admin").and()
 		.formLogin().loginPage("/login.html").failureUrl("/login-error");
 	}
