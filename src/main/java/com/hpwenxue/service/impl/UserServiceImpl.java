@@ -4,6 +4,7 @@ import com.hpwenxue.dao.UserRepository;
 import com.hpwenxue.domain.User;
 import com.hpwenxue.service.UserService;
 import com.hpwenxue.utils.E;
+import com.hpwenxue.utils.Md5Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,7 @@ public class UserServiceImpl implements UserService {
 	    if (user1 != null){
 	        throw new E("用户名已被注册，请重新选择一个吧！！");
         }
+        user.setPassWord(Md5Util.GetMD5Code(user.getPassWord()));
 		userRepository.save(user);
 	}
 
@@ -58,7 +60,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User getOne(Integer id) {
-		return userRepository.getOne(id);
+	    return userRepository.findOne(id);
 	}
 
 }
