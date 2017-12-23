@@ -3,6 +3,7 @@ package com.hpwenxue.service.impl;
 import com.hpwenxue.dao.UserRepository;
 import com.hpwenxue.domain.User;
 import com.hpwenxue.service.UserService;
+import com.hpwenxue.utils.E;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +26,11 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public void save(User user)
-	{
+	public void save(User user) {
+	    User user1 = userRepository.findByUserName(user.getUserName());
+	    if (user1 != null){
+	        throw new E("用户名已被注册，请重新选择一个吧！！");
+        }
 		userRepository.save(user);
 	}
 

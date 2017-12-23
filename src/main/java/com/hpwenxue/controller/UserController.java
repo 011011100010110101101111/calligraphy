@@ -41,7 +41,9 @@ public class UserController {
 	 */
 	@PostMapping(value="/register")
 	public R register(@RequestBody User user) {
-		//TODO 先验证用户名是否存在，不存在再新增
+		if (user == null || user.getUserName()== null || user.getPassWord() == null){
+		    return R.error(1,"用户名和密码均不能为空！");
+        }
 		userService.save(user);
 		return R.ok();
 	}

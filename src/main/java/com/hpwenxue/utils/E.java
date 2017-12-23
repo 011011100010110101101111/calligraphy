@@ -10,13 +10,20 @@ public class E extends RuntimeException{
 	private String message;
 	
 	public E(){
+	    super();
 		this.code = 500;
 		this.message = "未知的异常，请联系管理员！";
 	}
 	public E(Integer code,String message){
+	    super();
 		this.code = code;
 		this.message = message;
 	}
+	public E(String msg){
+	    super();
+	    this.code = -1;
+	    this.message = msg;
+    }
 	/**
 	 * can not null!
 	 * @return
