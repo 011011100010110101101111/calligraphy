@@ -60,10 +60,10 @@ public class Md5Util {
     }
 
    public static void main(String[] args) {
-	double a = 0.1;
-	double b = 3;
-	double c = a*b;
-	System.out.println(c);
-      // System.out.println(Md5Util.GetMD5Code("4846448686"));
+//	double a = 0.1;
+//	double b = 3;
+//	double c = a*b;
+//	System.out.println(c);
+    System.out.println(Md5Util.GetMD5Code("6657"));
 }
 }

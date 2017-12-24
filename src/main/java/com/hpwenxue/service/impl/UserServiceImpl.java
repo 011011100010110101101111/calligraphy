@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
 	private UserRepository userRepository;
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
-	
+
 	@Override
 	public void upgrade(User user) {
 		// TODO Auto-generated method stub
@@ -49,7 +49,11 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public void resetPsw(User user) {
+
+	    logger.info("用户："+user.getUserName()+"的用户进行了重置密码的操作！");
 		// TODO Auto-generated method stub
+
+        //TODO 应该通过邮箱验证的形式获取验证码获取重置密码链接
 		
 	}
 
