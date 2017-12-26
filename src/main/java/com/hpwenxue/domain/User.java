@@ -7,26 +7,35 @@ import javax.persistence.Id;
 public class User {
 	@Id
 	@GeneratedValue
+	//id
 	private Integer id;
+	//用户名
 	private String userName;
 	private String realName;
 	private Integer age;
 	private Integer sex;
 	private String passWord;
+	private String photograph;
 	
 	public User(){
 		
 	}
 
 
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", userName=" + userName + ", realName=" + realName + ", age=" + age + ", sex=" + sex
-				+ ", passWord=" + "can not view passWord!" + "]";
-	}
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", realName='" + realName + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                ", passWord='" + passWord + '\'' +
+                ", photograph='" + photograph + '\'' +
+                '}';
+    }
 
-
-	public Integer getId() {
+    public Integer getId() {
 		return id;
 	}
 	public void setId(Integer id) {
@@ -62,5 +71,12 @@ public class User {
 	public void setPassWord(String passWord) {
 		this.passWord = passWord;
 	}
-	
+
+    public String getPhotograph() {
+        return photograph;
+    }
+
+    public void setPhotograph(String photograph) {
+        this.photograph = photograph;
+    }
 }
