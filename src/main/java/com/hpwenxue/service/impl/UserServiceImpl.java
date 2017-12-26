@@ -32,7 +32,8 @@ public class UserServiceImpl implements UserService {
 	    if (user1 != null){
 	        throw new E("用户名已被注册，请重新选择一个吧！！");
         }
-        user.setPassWord(Md5Util.GetMD5Code(user.getPassWord()));
+        //密码加密
+        user.setPassWord(Md5Util.getPassWord(user.getUserName(),user.getPassWord()));
 		userRepository.save(user);
 	}
 

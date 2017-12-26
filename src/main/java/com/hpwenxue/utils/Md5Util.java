@@ -46,7 +46,7 @@ public class Md5Util {
         return sBuffer.toString();
     }
 
-    public static String GetMD5Code(String strObj) {
+    private static String GetMD5Code(String strObj) {
         String resultString = null;
         try {
             resultString = new String(strObj);
@@ -57,6 +57,16 @@ public class Md5Util {
             ex.printStackTrace();
         }
         return resultString;
+    }
+
+    /**
+     * cc-admin 密码加密规则
+     * @param userName 用户名
+     * @param publicPassWord 明文密码
+     * @return
+     */
+    public static String getPassWord(String userName,String publicPassWord){
+        return GetMD5Code(GetMD5Code(userName+publicPassWord));
     }
 
    public static void main(String[] args) {
