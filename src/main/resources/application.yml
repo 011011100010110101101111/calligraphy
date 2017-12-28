@@ -1,0 +1,44 @@
+server:
+  port: 8088
+spring: 
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://120.78.198.98:3306/hp_wenxue
+    username: root
+    password: QZ3bhSKdRqzDZyJuLYiYfVWCG0iOfGEH2bQUveTOuaJmPqOMTtm71czygo6aVxBb5/eGZ6+QP6aKYX7e5yvDlQ==
+    druid:
+           filter.config.enabled: true
+           connection-properties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJRHept2VP+6l6JXjK7kJu6ULx1fgRTxK4l4OM0HSVN1sqoCR6+Q5bzRHAqj5e1MDi0kaYfpVbbB2ejmKObSrnkCAwEAAQ==
+           initial-size: 1
+           min-idle: 1
+           max-active: 20
+           max-wait: 60000
+           time-between-eviction-runs-millis: 60000
+           min-evictable-idle-time-millis: 300000
+           validation-query: select 'x'
+           test-while-idle: true
+           test-on-borrow: false
+           test-on-return: false
+           pool-prepared-statements: false
+           max-open-prepared-statements: 20
+#           stat-view-servlet:
+#             enabled: true
+#             url-pattern: /druid/*
+#             reset-enable: false
+#             login-username: admin
+#             login-password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  thymeleaf:
+    encoding: UTF-8
+    cache: false
+  profiles:
+    active: dev
+#    mode: HTML5
+#    prefix: classpath:/templates/
+#    suffix: .html
+
+# 首次启动项目可以将ddl-auto 改为 create ,将会自动创建表结构
+# 数据库需要手动创建好
