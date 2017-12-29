@@ -1,0 +1,1 @@
+package com.hpwenxue.service;import com.hpwenxue.domain.ArticleType;import java.util.List;/** * @author : liuwenlong * @date : 2017/12/29 10:13 */public interface ArticleTypeService {    List<ArticleType> findAll();}

@@ -38,4 +38,11 @@ public interface ArticlesService {
 	void deleteByIds(List<Integer> ids);
 
 	void save(Articles articles);
+
+    /**
+     * 根据评论数查询排行
+     * @param topNo
+     * @return
+     */
+	List<Articles> queryTop5ByCom(int topNo);
 }

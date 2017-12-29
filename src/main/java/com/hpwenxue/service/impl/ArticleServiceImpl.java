@@ -48,4 +48,10 @@ public class ArticleServiceImpl implements ArticlesService {
 	public void save(Articles articles) {
 		articlesRepository.save(articles);
 	}
+
+	@Override
+	public List<Articles> queryTop5ByCom(int topNo) {
+	    //TODO 根据评论数查询排行
+		return null;
+	}
 }

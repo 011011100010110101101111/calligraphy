@@ -1,0 +1,1 @@
+package com.hpwenxue.service.impl;import com.hpwenxue.domain.ArticleType;import com.hpwenxue.service.ArticleTypeService;import java.util.List;/** * @author : liuwenlong * @date : 2017/12/29 10:15 */public class ArticleTypeServiceImpl implements ArticleTypeService{    @Override    public List<ArticleType> findAll() {        return null;    }}
