@@ -39,6 +39,12 @@ spring:
 #    mode: HTML5
 #    prefix: classpath:/templates/
 #    suffix: .html
+cc-cms:
+  cloud:
+    qiniu:
+      accessKey: kuE0NcT8ECCsqv_rC9CC0wOxldOunGFLElRdwton
+      secretKey: 3DU0nePK0QeDZTnUa7YjbfssX_xwLgovv5cgKWC1
+      bucket: p1po2lggd.bkt.clouddn.com
 
 # 首次启动项目可以将ddl-auto 改为 create ,将会自动创建表结构
 # 数据库需要手动创建好
