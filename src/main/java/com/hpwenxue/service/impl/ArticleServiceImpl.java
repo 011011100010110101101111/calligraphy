@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.hpwenxue.dao.ArticlesRepository;
+import com.hpwenxue.repository.ArticlesRepository;
 import com.hpwenxue.domain.Articles;
 import com.hpwenxue.service.ArticlesService;
 /**

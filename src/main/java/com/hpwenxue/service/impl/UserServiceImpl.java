@@ -1,6 +1,6 @@
 package com.hpwenxue.service.impl;
 
-import com.hpwenxue.dao.UserRepository;
+import com.hpwenxue.repository.UserRepository;
 import com.hpwenxue.domain.User;
 import com.hpwenxue.service.UserService;
 import com.hpwenxue.utils.E;

@@ -2,7 +2,7 @@ package com.hpwenxue.service.impl;
 
 import java.util.List;
 
-import com.hpwenxue.dao.RolesRepository;
+import com.hpwenxue.repository.RolesRepository;
 import com.hpwenxue.domain.Roles;
 import com.hpwenxue.service.RolesService;
 import org.springframework.beans.factory.annotation.Autowired;

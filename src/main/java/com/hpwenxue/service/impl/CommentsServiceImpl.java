@@ -2,7 +2,7 @@ package com.hpwenxue.service.impl;
 
 import java.util.List;
 
-import com.hpwenxue.dao.CommentsRepository;
+import com.hpwenxue.repository.CommentsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

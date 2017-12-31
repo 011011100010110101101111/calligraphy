@@ -1,4 +1,4 @@
-package com.hpwenxue.dao;
+package com.hpwenxue.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
