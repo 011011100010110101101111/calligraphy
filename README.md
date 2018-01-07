@@ -8,7 +8,7 @@ This project was developed for the HuPan literature during the University
 
 - 目前项目正在设计初期，如果需要了解，请移步 [wiki](https://github.com/gitors/hp-literature/wiki "文档地址")
 
-- 本项目开发使用前后端分离，前端工程地址 ：[cc-admin](https://github.com/gitors/cc-admin)
+- 本项目开发使用前后端分离，前端工程地址 ：[cc-admin](https://github.com/gitors/cc-admin "cc-admin")
 
 ## 构思（conception）
 - first of all, from when I was in college, had wanted to give us the idea of literature to build a website, but suffer from a student's helpless pain, many ideas have been put on hold, but for this matter, "if you have a dream, you must go to defend his" ——from "the pursuit of happyness"
