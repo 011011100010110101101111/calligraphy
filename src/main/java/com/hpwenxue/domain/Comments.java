@@ -22,6 +22,10 @@ public class Comments {
 	private Integer endorseNum;
 	//点踩数
 	private Integer opposeNum;
+
+	//上级评论节点（做回复使用）
+	private Integer parentId;
+
 	public Integer getId() {
 		return id;
 	}
@@ -61,6 +65,24 @@ public class Comments {
 	public void setOpposeNum(Integer opposeNum) {
 		this.opposeNum = opposeNum;
 	}
-	
-	
+
+    public Integer getParentId() {
+        return parentId;
+    }
+
+    public void setParentId(Integer parentId) {
+        this.parentId = parentId;
+    }
+
+    @Override
+    public String toString() {
+        return "Comments{" +
+                "id=" + id +
+                ", articleId=" + articleId +
+                ", detail='" + detail + '\'' +
+                ", endorseNum=" + endorseNum +
+                ", opposeNum=" + opposeNum +
+                ", parentId=" + parentId +
+                '}';
+    }
 }
