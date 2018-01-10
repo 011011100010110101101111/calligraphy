@@ -23,7 +23,7 @@ public class Comments {
 	//点踩数
 	private Integer opposeNum;
 
-	//上级评论节点（做回复使用）
+	//上级评论节点（做回复使用）最高节点父节点为空，
 	private Integer parentId;
 
 	public Integer getId() {
