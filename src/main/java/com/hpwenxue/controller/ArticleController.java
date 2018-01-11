@@ -1,0 +1,1 @@
+package com.hpwenxue.controller;import org.springframework.web.bind.annotation.RequestMapping;import org.springframework.web.bind.annotation.RestController;/** * @author : liuwenlong * @date : 2018/1/10 21:58 */@RestController@RequestMapping("/article")public class ArticleController {}
