@@ -7,10 +7,10 @@ import java.security.NoSuchAlgorithmException;
  * MD5 算法
 */
 public class Md5Util {
-    
+
     // 全局数组
-    private final static String[] strDigits = { "0", "1", "2", "3", "4", "5",
-            "6", "7", "8", "9", "a", "b", "c", "d", "e", "f" };
+    private final static String[] strDigits = {"0", "1", "2", "3", "4", "5",
+            "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
 
     public Md5Util() {
     }
@@ -26,6 +26,7 @@ public class Md5Util {
         int iD2 = iRet % 16;
         return strDigits[iD1] + strDigits[iD2];
     }
+
     // 转换字节数组为16进制字串
     private static String byteToString(byte[] bByte) {
         StringBuffer sBuffer = new StringBuffer();
@@ -50,19 +51,20 @@ public class Md5Util {
 
     /**
      * cc-admin 密码加密规则
-     * @param userName 用户名
+     *
+     * @param userName       用户名
      * @param publicPassWord 明文密码
      * @return
      */
-    public static String getPassWord(String userName,String publicPassWord){
-        return GetMD5Code(GetMD5Code(userName+publicPassWord));
+    public static String getPassWord(String userName, String publicPassWord) {
+        return GetMD5Code(GetMD5Code(userName + publicPassWord));
     }
 
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 //	double a = 0.1;
 //	double b = 3;
 //	double c = a*b;
 //	System.out.println(c);
-    System.out.println(Md5Util.GetMD5Code("6657"));
-}
+        System.out.println(Md5Util.GetMD5Code("6657"));
+    }
 }
