@@ -1,5 +1,7 @@
 package com.hpwenxue.domain;
 
+import com.hpwenxue.enums.Dictionaries;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -79,4 +81,15 @@ public class User {
     public void setPhotograph(String photograph) {
         this.photograph = photograph;
     }
+
+    public User getAdmin(){
+		User user_new = new User();
+		user_new.setUserName("admin");
+		user_new.setRealName("刘文龙");
+		user_new.setAge(25);
+		user_new.setSex(Dictionaries.Sex.MAN.value());
+		user_new.setPhotograph("null");
+
+		return user_new;
+	}
 }
