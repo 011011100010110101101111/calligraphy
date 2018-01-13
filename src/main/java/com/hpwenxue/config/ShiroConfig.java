@@ -1,0 +1,1 @@
+package com.hpwenxue.config;import org.springframework.context.annotation.Configuration;/** * shiro配置类 * @author : liuwenlong * @date : 2018/1/13 11:51 */@Configurationpublic class ShiroConfig {}

@@ -1,1 +1,0 @@
-package com.hpwenxue.utils;/** * @author : liuwenlong * @date : 2018/1/10 21:59 */public class Page {    private int limit; //每页条数    }
