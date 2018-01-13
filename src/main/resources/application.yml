@@ -3,7 +3,7 @@ server:
 spring: 
   datasource: 
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://120.78.198.98:3306/hp_wenxue
+    url: jdbc:mysql://120.78.198.98:3306/hp_wenxue?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: QZ3bhSKdRqzDZyJuLYiYfVWCG0iOfGEH2bQUveTOuaJmPqOMTtm71czygo6aVxBb5/eGZ6+QP6aKYX7e5yvDlQ==
     druid:
@@ -21,6 +21,7 @@ spring:
            test-on-return: false
            pool-prepared-statements: false
            max-open-prepared-statements: 20
+#    schema: ./doc/db/literrature.sql
 #           stat-view-servlet:
 #             enabled: true
 #             url-pattern: /druid/*
