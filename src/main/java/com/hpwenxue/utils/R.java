@@ -1,4 +1,8 @@
 package com.hpwenxue.utils;
+/*
+ * 此部分代码借鉴与人人开源 http://wwww.renren.io/open
+ * 本项目借鉴代码将会在各处分别说明
+ */
 
 import java.util.HashMap;
 import java.util.Map;
