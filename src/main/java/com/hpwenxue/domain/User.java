@@ -82,14 +82,4 @@ public class User {
         this.photograph = photograph;
     }
 
-    public User getAdmin(){
-		User user_new = new User();
-		user_new.setUserName("admin");
-		user_new.setRealName("刘文龙");
-		user_new.setAge(25);
-		user_new.setSex(Dictionaries.Sex.MAN.value());
-		user_new.setPhotograph("null");
-
-		return user_new;
-	}
 }

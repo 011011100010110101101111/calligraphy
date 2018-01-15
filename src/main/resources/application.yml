@@ -1,9 +1,9 @@
 server:
-  port: 8088
+  port: 8080
 spring: 
   datasource: 
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://120.78.198.98:3306/hp_wenxue?useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://120.78.198.98:3306/hp_wenxue?useUnicode=true&characterEncoding=UTF-8&SSL=true
     username: root
     password: QZ3bhSKdRqzDZyJuLYiYfVWCG0iOfGEH2bQUveTOuaJmPqOMTtm71czygo6aVxBb5/eGZ6+QP6aKYX7e5yvDlQ==
     druid:
@@ -31,7 +31,7 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
   thymeleaf:
     encoding: UTF-8
     cache: false

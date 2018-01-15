@@ -1,0 +1,1 @@
+package com.hpwenxue.aspect;import org.springframework.web.bind.annotation.RestControllerAdvice;/** * 保留字拦截，在发帖、注册、评论等请求时，进行拦截，如果内容包含相应对关键字，在此处进行处理 * @author : liuwenlong * @date : 2018/1/15 15:04 */@RestControllerAdvicepublic class ReservedAspect {}
