@@ -3,7 +3,7 @@ server:
 spring: 
   datasource: 
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://120.78.198.98:3306/hp_wenxue?useUnicode=true&characterEncoding=UTF-8&SSL=true
+    url: jdbc:mysql://120.78.198.98:3306/hp_wenxue?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: QZ3bhSKdRqzDZyJuLYiYfVWCG0iOfGEH2bQUveTOuaJmPqOMTtm71czygo6aVxBb5/eGZ6+QP6aKYX7e5yvDlQ==
     druid:
