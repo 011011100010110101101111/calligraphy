@@ -48,4 +48,4 @@ cc-cms:
       bucket: p1po2lggd.bkt.clouddn.com
 
 # 首次启动项目可以将ddl-auto 改为 create ,将会自动创建表结构
-# 数据库需要手动创建好
+# 数据库需要手动创建好.
