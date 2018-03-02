@@ -36,7 +36,6 @@ This project was developed for the HuPan literature during the University
 
 > Due to my limited English level, most of the English versions are translated by means of tools. If there is any inaccuracy, please understand
 
-> 由于本人英语水平有限，英文版说明大多通过工具翻译，如果有不准确的，请谅解
-
+> 由于本人英语水平有限，英文版说明大多通过工具翻译，如果有不准确的，请谅解.
 1
 
