@@ -35,11 +35,11 @@ spring:
   thymeleaf:
     encoding: UTF-8
     cache: false
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
   profiles:
     active: dev
-#    mode: HTML5
-#    prefix: classpath:/templates/
-#    suffix: .html
 cc-cms:
   cloud:
     qiniu:
