@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 /**
  * 文章entity
- * @author allen
+ * @author liuwenlong
  *
  */
 @Entity
